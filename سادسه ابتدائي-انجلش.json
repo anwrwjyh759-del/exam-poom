@@ -1,0 +1,126 @@
+{
+  "Term 1 - Past Continuous": {
+    "mcq": [
+      "I _____ TV when you called.<br>a) watch b) watched c) was watching d) am watching",
+      "They _____ football at 5 pm yesterday.<br>a) play b) played c) were playing d) are playing"
+    ],
+    "tf": [
+      "We use past continuous for actions happening at a specific time in the past. [True/False]",
+      "I was sleep when you came. [True/False]"
+    ],
+    "short": [
+      "Write a sentence using 'was studying'",
+      "Make a sentence: While I was cooking, my brother _____"
+    ],
+    "long": []
+  },
+  "Term 1 - Travel and Transportation": {
+    "mcq": [
+      "A vehicle that goes underwater is a:<br>a) Ship b) Submarine c) Boat d) Ferry",
+      "We buy a _____ before traveling by plane.<br>a) Ticket b) Passport c) Luggage d) Visa"
+    ],
+    "tf": [
+      "A pilot flies a plane. [True/False]",
+      "A train goes on water. [True/False]"
+    ],
+    "short": [
+      "Name 4 means of transportation",
+      "How do you prefer to travel and why?"
+    ],
+    "long": [
+      "Write about a trip you would like to take"
+    ]
+  },
+  "Term 1 - Present Perfect Continuous": {
+    "mcq": [
+      "She _____ English for 5 years.<br>a) learns b) learned c) has learned d) has been learning",
+      "They _____ here since 2020.<br>a) live b) lived c) have lived d) have been living"
+    ],
+    "tf": [
+      "We use present perfect continuous for actions that started in the past and continue now. [True/False]",
+      "I have been work here for 2 years. [True/False]"
+    ],
+    "short": [
+      "Write a sentence using 'have been playing'",
+      "Change to present perfect continuous: I study English"
+    ],
+    "long": []
+  },
+  "Term 1 - Environmental Problems": {
+    "mcq": [
+      "Cutting down too many trees causes:<br>a) Afforestation b) Deforestation c) Reforestation d) Pollution",
+      "Global warming leads to:<br>a) Colder weather b) Melting ice c) More rain d) Less sea level"
+    ],
+    "tf": [
+      "Recycling helps reduce pollution. [True/False]",
+      "Burning plastic is good for the environment. [True/False]"
+    ],
+    "short": [
+      "Name 3 environmental problems",
+      "What can we do to protect the environment?"
+    ],
+    "long": []
+  },
+  "Term 2 - Passive Voice: Present and Past": {
+    "mcq": [
+      "The house _____ every day.<br>a) clean b) cleans c) is cleaned d) was cleaned",
+      "The letter _____ yesterday.<br>a) write b) wrote c) is written d) was written"
+    ],
+    "tf": [
+      "In passive voice, the object becomes the subject. [True/False]",
+      "We use 'have' + past participle in passive present perfect. [True/False]"
+    ],
+    "short": [
+      "Change to passive: People speak English worldwide",
+      "Write a sentence in passive past simple"
+    ],
+    "long": []
+  },
+  "Term 2 - Reported Speech": {
+    "mcq": [
+      "He said, 'I am tired'. → He said that he _____ tired.<br>a) am b) was c) is d) were",
+      "'I will go', she said. → She said that she _____ go.<br>a) will b) would c) can d) may"
+    ],
+    "tf": [
+      "In reported speech, we change the tense one step back. [True/False]",
+      "'Tomorrow' becomes 'yesterday' in reported speech. [True/False]"
+    ],
+    "short": [
+      "Report: She said, 'I like apples'",
+      "Change to reported speech: 'I can swim', he said"
+    ],
+    "long": []
+  },
+  "Term 2 - Technology and Inventions": {
+    "mcq": [
+      "Who invented the telephone?<br>a) Edison b) Bell c) Newton d) Einstein",
+      "The internet helps us _____ information quickly.<br>a) lose b) hide c) access d) forget"
+    ],
+    "tf": [
+      "Technology makes our life easier. [True/False]",
+      "The first computer was smaller than a phone. [True/False]"
+    ],
+    "short": [
+      "Name 3 modern inventions",
+      "How does technology help students?"
+    ],
+    "long": [
+      "Write about an invention that changed the world"
+    ]
+  },
+  "Term 2 - Future Continuous and Future Perfect": {
+    "mcq": [
+      "This time tomorrow, I _____ to school.<br>a) go b) will go c) will be going d) went",
+      "By next year, she _____ her degree.<br>a) finish b) will finish c) will have finished d) finished"
+    ],
+    "tf": [
+      "Future continuous is used for actions happening at a specific time in the future. [True/False]",
+      "Future perfect shows an action completed before another future action. [True/False]"
+    ],
+    "short": [
+      "Make a sentence using future continuous",
+      "Write a sentence using 'will have lived'"
+    ],
+    "long": []
+  }
+}
