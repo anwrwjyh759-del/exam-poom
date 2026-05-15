@@ -1,0 +1,128 @@
+{
+  "Term 1 - Tenses Review: Present, Past, Future": {
+    "mcq": [
+      "She _____ to school every day.<br>a) go b) goes c) going d) went",
+      "By next year, I _____ my studies.<br>a) finish b) will finish c) will have finished d) finished"
+    ],
+    "tf": [
+      "Present simple is used for habits and facts. [True/False]",
+      "Past continuous shows an action completed in the past. [True/False]"
+    ],
+    "short": [
+      "Write a sentence in present perfect continuous",
+      "Change to passive: They built this bridge in 2010"
+    ],
+    "long": []
+  },
+  "Term 1 - Reported Speech and Questions": {
+    "mcq": [
+      "'I am busy,' he said. → He said that he _____ busy.<br>a) am b) was c) is d) were",
+      "'Where do you live?' → She asked me where I _____ .<br>a) live b) lived c) am living d) was living"
+    ],
+    "tf": [
+      "In reported speech, we usually change the tense one step back. [True/False]",
+      "We use 'that' in reported yes/no questions. [True/False]"
+    ],
+    "short": [
+      "Report: 'I can speak French,' she said",
+      "Change to reported question: 'Do you like music?' he asked"
+    ],
+    "long": []
+  },
+  "Term 1 - Modal Verbs and Conditionals": {
+    "mcq": [
+      "You _____ wear a helmet when riding a motorbike.<br>a) can b) must c) might d) would",
+      "If I had money, I _____ a new laptop.<br>a) will buy b) would buy c) bought d) buy"
+    ],
+    "tf": [
+      "We use 'should' for advice. [True/False]",
+      "Type 2 conditional refers to real future situations. [True/False]"
+    ],
+    "short": [
+      "Give advice using 'should' for a student who is always late",
+      "Write a Type 3 conditional sentence"
+    ],
+    "long": []
+  },
+  "Term 1 - Science and Technology": {
+    "mcq": [
+      "Artificial Intelligence helps us _____ problems faster.<br>a) create b) solve c) forget d) hide",
+      "A device that stores data is called a:<br>a) monitor b) keyboard c) hard disk d) printer"
+    ],
+    "tf": [
+      "Technology has no effect on education. [True/False]",
+      "We should use technology responsibly. [True/False]"
+    ],
+    "short": [
+      "Name 3 advantages of the internet",
+      "What are the dangers of spending too much time online?"
+    ],
+    "long": [
+      "Write about how technology changed our lives"
+    ]
+  },
+  "Term 2 - Passive Voice: All Tenses": {
+    "mcq": [
+      "The letter _____ yesterday.<br>a) write b) wrote c) was written d) is written",
+      "English _____ all over the world.<br>a) speaks b) is spoken c) was spoken d) has spoken"
+    ],
+    "tf": [
+      "The passive of 'She has finished the work' is 'The work has been finished by her'. [True/False]",
+      "We use 'by' to mention the agent in passive sentences. [True/False]"
+    ],
+    "short": [
+      "Change to passive: They will open a new hospital next month",
+      "Rewrite in active: The house was built by my grandfather"
+    ],
+    "long": []
+  },
+  "Term 2 - Relative Clauses and Defining Clauses": {
+    "mcq": [
+      "The man _____ lives next door is a doctor.<br>a) who b) which c) where d) when",
+      "This is the book _____ I borrowed from the library.<br>a) who b) which c) where d) when"
+    ],
+    "tf": [
+      "Defining relative clauses give essential information. [True/False]",
+      "We can use 'that' for both people and things in defining clauses. [True/False]"
+    ],
+    "short": [
+      "Combine: The girl is my sister. She is wearing a blue dress",
+      "Add a non-defining relative clause: My teacher Mr. Ali _____ helped me"
+    ],
+    "long": []
+  },
+  "Term 2 - Linking Words and Essay Writing": {
+    "mcq": [
+      "We use 'however' to show:<br>a) addition b) contrast c) cause d) time",
+      "Which word means 'because'?:<br>a) although b) since c) but d) and"
+    ],
+    "tf": [
+      "An essay should have an introduction, body, and conclusion. [True/False]",
+      "We use linking words to make writing less organized. [True/False]"
+    ],
+    "short": [
+      "Write 3 linking words for giving examples",
+      "Complete: I like reading, _____ I don't have much time"
+    ],
+    "long": [
+      "Write a short essay about the importance of learning English"
+    ]
+  },
+  "Term 2 - Environment and Global Issues": {
+    "mcq": [
+      "Global warming is caused by an increase in:<br>a) Oxygen b) Carbon dioxide c) Nitrogen d) Hydrogen",
+      "Deforestation leads to:<br>a) More rain b) Soil erosion c) Clean air d) More forests"
+    ],
+    "tf": [
+      "Recycling helps reduce waste and pollution. [True/False]",
+      "Climate change only affects poor countries. [True/False]"
+    ],
+    "short": [
+      "Name 3 effects of pollution",
+      "What can governments do to protect the environment?"
+    ],
+    "long": [
+      "Write about how individuals can help solve environmental problems"
+    ]
+  }
+}
