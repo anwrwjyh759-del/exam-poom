@@ -1,0 +1,128 @@
+{
+  "Term 1 - Present Continuous": {
+    "mcq": [
+      "I _____ now. <br>a) play b) am playing c) plays d) played",
+      "She _____ TV at the moment.<br>a) watch b) watches c) is watching d) watched"
+    ],
+    "tf": [
+      "We use present continuous for actions happening now. [True/False]",
+      "He is go to school now. [True/False]"
+    ],
+    "short": [
+      "Write a sentence using 'They are studying'",
+      "Change to present continuous: I eat"
+    ],
+    "long": []
+  },
+  "Term 1 - My City": {
+    "mcq": [
+      "A place where you can read books is a:<br>a) Hospital b) Library c) School d) Park",
+      "We buy medicine from a:<br>a) Supermarket b) Pharmacy c) Bakery d) Bank"
+    ],
+    "tf": [
+      "A museum is a place to see old things. [True/False]",
+      "We sleep in a restaurant. [True/False]"
+    ],
+    "short": [
+      "Name 3 places in your city",
+      "Where do you go to buy food?"
+    ],
+    "long": [
+      "Describe your city in 5 sentences"
+    ]
+  },
+  "Term 1 - Past Simple: Regular Verbs": {
+    "mcq": [
+      "Yesterday I _____ my homework.<br>a) do b) does c) did d) doing",
+      "She _____ to music last night.<br>a) listen b) listens c) listened d) listening"
+    ],
+    "tf": [
+      "We add -ed to regular verbs in the past. [True/False]",
+      "Go in the past is goed. [True/False]"
+    ],
+    "short": [
+      "Write the past form of 'play', 'work', 'visit'",
+      "Make a sentence in past simple"
+    ],
+    "long": []
+  },
+  "Term 1 - Feelings and Health": {
+    "mcq": [
+      "I feel _____ when I have a fever.<br>a) happy b) sick c) excited d) sleepy",
+      "We should _____ to stay healthy.<br>a) sleep well b) eat junk food c) stay up late d) not exercise"
+    ],
+    "tf": [
+      "Drinking water is good for health. [True/False]",
+      "Eating too many sweets is healthy. [True/False]"
+    ],
+    "short": [
+      "Write 3 ways to stay healthy",
+      "What do you do when you have a headache?"
+    ],
+    "long": []
+  },
+  "Term 2 - Future with Will": {
+    "mcq": [
+      "I _____ visit my grandma tomorrow.<br>a) am b) was c) will d) did",
+      "She _____ be a doctor in the future.<br>a) is b) was c) will d) does"
+    ],
+    "tf": [
+      "We use 'will' for future actions. [True/False]",
+      "I will not go. This is negative. [True/False]"
+    ],
+    "short": [
+      "Make a sentence with 'will travel'",
+      "Change to negative: He will win"
+    ],
+    "long": []
+  },
+  "Term 2 - Comparative Adjectives": {
+    "mcq": [
+      "A car is _____ than a bicycle.<br>a) fast b) faster c) fastest d) more fast",
+      "This book is _____ than that one.<br>a) interesting b) more interesting c) most interesting d) interestinger"
+    ],
+    "tf": [
+      "We add -er to short adjectives for comparison. [True/False]",
+      "Good becomes gooder in comparative. [True/False]"
+    ],
+    "short": [
+      "Write the comparative of 'tall', 'big', 'happy'",
+      "Make a sentence using 'bigger than'"
+    ],
+    "long": []
+  },
+  "Term 2 - Environment and Pollution": {
+    "mcq": [
+      "We should _____ trees to protect the environment.<br>a) cut b) plant c) burn d) destroy",
+      "Air pollution causes:<br>a) Health b) Diseases c) Happiness d) Strength"
+    ],
+    "tf": [
+      "Recycling helps reduce waste. [True/False]",
+      "Throwing garbage in the river is good. [True/False]"
+    ],
+    "short": [
+      "Name 3 types of pollution",
+      "How can we keep our environment clean?"
+    ],
+    "long": [
+      "Write about protecting the environment in 5 sentences"
+    ]
+  },
+  "Term 2 - Hobbies and Free Time": {
+    "mcq": [
+      "I like _____ in my free time.<br>a) sleep b) reading c) reads d) readed",
+      "He enjoys _____ football.<br>a) play b) plays c) playing d) played"
+    ],
+    "tf": [
+      "A hobby is something you do for fun. [True/False]",
+      "We should not have hobbies. [True/False]"
+    ],
+    "short": [
+      "Write 3 hobbies you like",
+      "What do you do on weekends?"
+    ],
+    "long": [
+      "Write about your favorite hobby"
+    ]
+  }
+}
