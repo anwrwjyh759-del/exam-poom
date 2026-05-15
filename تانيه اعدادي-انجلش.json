@@ -1,0 +1,126 @@
+{
+  "Term 1 - Passive Voice: All Tenses": {
+    "mcq": [
+      "The letter _____ yesterday.<br>a) write b) wrote c) was written d) is written",
+      "Rice _____ in Egypt.<br>a) grows b) is grown c) was grown d) grew"
+    ],
+    "tf": [
+      "In passive voice, the object becomes the subject. [True/False]",
+      "We use 'have been' + past participle for passive present perfect. [True/False]"
+    ],
+    "short": [
+      "Change to passive: They built the bridge in 2020",
+      "Write a sentence in passive present continuous"
+    ],
+    "long": []
+  },
+  "Term 1 - Reported Speech: Statements and Questions": {
+    "mcq": [
+      "He said, 'I am tired'. → He said that he _____ tired.<br>a) am b) was c) is d) were",
+      "'Where do you live?' → She asked me where I _____ .<br>a) live b) lived c) am living d) was living"
+    ],
+    "tf": [
+      "In reported speech, we usually change the tense one step back. [True/False]",
+      "We use 'that' in reported questions. [True/False]"
+    ],
+    "short": [
+      "Report: 'I can swim', she said",
+      "Change to reported question: 'Do you like coffee?' he asked"
+    ],
+    "long": []
+  },
+  "Term 1 - Conditionals: Type 0, 1, 2": {
+    "mcq": [
+      "If you heat ice, it _____ .<br>a) melts b) will melt c) melted d) would melt",
+      "If I had money, I _____ a car.<br>a) will buy b) would buy c) bought d) buy"
+    ],
+    "tf": [
+      "Type 0 conditional is used for general truths. [True/False]",
+      "Type 2 conditional refers to real future situations. [True/False]"
+    ],
+    "short": [
+      "Write a Type 1 conditional sentence",
+      "Complete: If I were you, I _____"
+    ],
+    "long": []
+  },
+  "Term 1 - Environment and Pollution": {
+    "mcq": [
+      "Cutting down too many trees causes:<br>a) Afforestation b) Deforestation c) Reforestation d) Pollution",
+      "Air pollution can cause:<br>a) Clean air b) Respiratory problems c) Good weather d) Rain"
+    ],
+    "tf": [
+      "Recycling helps reduce pollution. [True/False]",
+      "Burning plastic is good for the environment. [True/False]"
+    ],
+    "short": [
+      "Name 3 causes of pollution",
+      "What can we do to protect the environment?"
+    ],
+    "long": [
+      "Write an essay about how to reduce pollution"
+    ]
+  },
+  "Term 2 - Present Perfect Continuous and Past Perfect": {
+    "mcq": [
+      "She _____ English for 5 years.<br>a) learns b) learned c) has learned d) has been learning",
+      "I had finished my homework before my father _____ home.<br>a) comes b) came c) will come d) come"
+    ],
+    "tf": [
+      "Present perfect continuous shows duration from past to present. [True/False]",
+      "Past perfect is used for an action that happened before another past action. [True/False]"
+    ],
+    "short": [
+      "Write a sentence using 'have been working'",
+      "Change to past perfect: She left before I arrived"
+    ],
+    "long": []
+  },
+  "Term 2 - Modal Verbs: Obligation, Possibility, Advice": {
+    "mcq": [
+      "You _____ wear a helmet when riding a bike.<br>a) can b) should c) might d) would",
+      "It _____ rain tomorrow. The sky is cloudy.<br>a) must b) might c) should d) can"
+    ],
+    "tf": [
+      "We use 'must' for strong obligation. [True/False]",
+      "'Could' is used for present ability only. [True/False]"
+    ],
+    "short": [
+      "Give advice using 'should' for a student who is lazy",
+      "Make a sentence using 'have to'"
+    ],
+    "long": []
+  },
+  "Term 2 - Relative Clauses": {
+    "mcq": [
+      "The man _____ lives next door is a doctor.<br>a) who b) which c) where d) when",
+      "This is the book _____ I borrowed from the library.<br>a) who b) which c) where d) when"
+    ],
+    "tf": [
+      "We use 'who' for people and 'which' for things. [True/False]",
+      "We can use 'that' for both people and things. [True/False]"
+    ],
+    "short": [
+      "Combine: The girl is my sister. She is wearing a red dress",
+      "Write a sentence using 'where' as a relative adverb"
+    ],
+    "long": []
+  },
+  "Term 2 - Technology and Future Life": {
+    "mcq": [
+      "In the future, robots _____ most of the housework.<br>a) do b) did c) will do d) are doing",
+      "Artificial Intelligence helps us _____ problems faster.<br>a) lose b) solve c) forget d) hide"
+    ],
+    "tf": [
+      "Technology will have no effect on education in the future. [True/False]",
+      "We should learn how to use technology responsibly. [True/False]"
+    ],
+    "short": [
+      "Predict how life will be in 2050",
+      "Name 3 ways technology changed communication"
+    ],
+    "long": [
+      "Write about the advantages and disadvantages of AI"
+    ]
+  }
+}
