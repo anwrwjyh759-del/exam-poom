@@ -1,0 +1,124 @@
+{
+  "Term 1 - Letters K to P": {
+    "mcq": [
+      "What letter comes after K?<br>a) J b) L c) M d) N",
+      "Which of these is a consonant?<br>a) A b) E c) M d) I"
+    ],
+    "tf": [
+      "P is a vowel letter. [True/False]",
+      "O is a vowel letter. [True/False]"
+    ],
+    "short": [
+      "Write the letters from K to P",
+      "What is the capital letter of 'k'?"
+    ],
+    "long": []
+  },
+  "Term 1 - My House": {
+    "mcq": [
+      "We cook food in the:<br>a) Bedroom b) Kitchen c) Bathroom d) Garden",
+      "We sleep in the:<br>a) Kitchen b) Living room c) Bedroom d) Bathroom"
+    ],
+    "tf": [
+      "We eat in the bathroom. [True/False]",
+      "The living room is for relaxing. [True/False]"
+    ],
+    "short": [
+      "Name 3 rooms in your house",
+      "What do you do in the living room?"
+    ],
+    "long": [
+      "Describe your house in 4 sentences"
+    ]
+  },
+  "Term 1 - Simple Present": {
+    "mcq": [
+      "I _____ to school every day.<br>a) go b) goes c) going d) went",
+      "She _____ apples.<br>a) like b) likes c) liking d) liked"
+    ],
+    "tf": [
+      "He plays football every Friday. [True/False]",
+      "They go to school on Sunday. [True/False]"
+    ],
+    "short": [
+      "Write a sentence using 'I play'",
+      "Change to negative: She reads books"
+    ],
+    "long": []
+  },
+  "Term 1 - Occupations": {
+    "mcq": [
+      "A person who teaches students is a:<br>a) Doctor b) Teacher c) Engineer d) Farmer",
+      "A person who treats sick people is a:<br>a) Teacher b) Doctor c) Pilot d) Driver"
+    ],
+    "tf": [
+      "A farmer grows crops. [True/False]",
+      "A pilot drives a car. [True/False]"
+    ],
+    "short": [
+      "Name 3 jobs",
+      "What does a nurse do?"
+    ],
+    "long": []
+  },
+  "Term 2 - Past Simple": {
+    "mcq": [
+      "Yesterday I _____ to the park.<br>a) go b) goes c) went d) going",
+      "She _____ a book last night.<br>a) read b) reads c) reading d) readed"
+    ],
+    "tf": [
+      "I played football yesterday. [True/False]",
+      "He go to school yesterday. [True/False]"
+    ],
+    "short": [
+      "Write the past form of 'play'",
+      "Make a sentence in past simple"
+    ],
+    "long": []
+  },
+  "Term 2 - Directions": {
+    "mcq": [
+      "Turn _____ to go north.<br>a) Left b) Right c) Straight d) Back",
+      "The opposite of 'up' is:<br>a) Left b) Right c) Down d) Forward"
+    ],
+    "tf": [
+      "Turn left means to go to the left side. [True/False]",
+      "Go straight means to stop. [True/False]"
+    ],
+    "short": [
+      "Give directions to the school",
+      "What is the opposite of 'right'?"
+    ],
+    "long": []
+  },
+  "Term 2 - Transport": {
+    "mcq": [
+      "We travel by _____ in the sky.<br>a) Car b) Train c) Plane d) Bus",
+      "A _____ runs on rails.<br>a) Bus b) Car c) Train d) Boat"
+    ],
+    "tf": [
+      "A ship travels on water. [True/False]",
+      "A bicycle has four wheels. [True/False]"
+    ],
+    "short": [
+      "Name 3 means of transport",
+      "How do you go to school?"
+    ],
+    "long": []
+  },
+  "Term 2 - Adjectives": {
+    "mcq": [
+      "The opposite of 'big' is:<br>a) Large b) Small c) Tall d) Long",
+      "The sun is very:<br>a) Cold b) Hot c) Dark d) Wet"
+    ],
+    "tf": [
+      "A fast car moves slowly. [True/False]",
+      "A tall building is high. [True/False]"
+    ],
+    "short": [
+      "Write 3 opposites",
+      "Describe your friend using 2 adjectives"
+    ],
+    "long": []
+  }
+}
