@@ -5,129 +5,234 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>مولد الامتحانات</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap');
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Cairo',sans-serif}
-body{background:#0a0a0a;color:#00f7ff;padding:20px}
-.container{max-width:1000px;margin:auto}
-h1{text-align:center;font-size:32px;text-shadow:0 0 20px #00f7ff;margin-bottom:25px}
-.box{background:rgba(0,0,0,0.8);border:2px solid #00f7ff;border-radius:10px;padding:25px}
-label{display:block;margin:10px 0 5px;font-weight:700}
-select,input{width:100%;padding:12px;background:#111;border:2px solid #00f7ff;color:#00f7ff;border-radius:6px;font-size:16px;margin-bottom:10px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px}
-button{background:transparent;color:#00f7ff;border:2px solid #00f7ff;padding:15px 40px;font-size:18px;font-weight:700;border-radius:6px;cursor:pointer;margin:10px 5px}
-button:hover{background:#00f7ff;color:#0a0a0a;box-shadow:0 0 25px #00f7ff}
-#exam-preview{background:white;color:black;padding:40px;margin-top:30px;border-radius:10px;display:none}
-.q{margin:20px 0;padding-bottom:15px;border-bottom:1px dashed #ccc}
-.loading{text-align:center;padding:20px;color:#00ff88;display:none}
-@media print{body{background:white;padding:0}.box,button{display:none}#exam-preview{display:block!important}}
+  body {
+    background: #000;
+    color: #fff;
+    font-family: 'Tajawal', Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+  h1 {
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  }
+ .container {
+    max-width: 600px;
+    margin: auto;
+    border: 2px solid #00ffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 20px #00ffff;
+  }
+  select, button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #00ffff;
+    background: #111;
+    color: #00ffff;
+    font-size: 16px;
+    outline: none;
+  }
+  select:focus, button:hover {
+    box-shadow: 0 0 10px #00ffff;
+  }
+  button {
+    background: #00ffff;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+  }
+ .question {
+    background: #111;
+    border: 1px solid #00ffff;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    text-align: right;
+  }
+ .options button {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    background: #222;
+    color: #fff;
+    border: 1px solid #444;
+  }
+ .options button.correct {
+    background: #00ff88;
+    color: #000;
+  }
+ .options button.wrong {
+    background: #ff4444;
+    color: #fff;
+  }
+  label {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    color: #00ffff;
+  }
 </style>
 </head>
 <body>
-<div class="container">
+
 <h1>مولد الامتحانات</h1>
+<div class="container">
+  <label>الصف</label>
+  <select id="gradeSelect">
+    <option value="">اختر الصف</option>
+  </select>
 
-<div class="box">
-<div class="grid">
-<div>
-<label>الصف</label>
-<select id="grade" onchange="updateSubjects()">
-<option value="">اختر الصف</option>
-<option value="رابعة">رابعة ابتدائي</option>
-<option value="خامسة">خامسة ابتدائي</option>
-<option value="سادسة">سادسة ابتدائي</option>
-</select>
-</div>
-<div>
-<label>المادة</label>
-<select id="subject" onchange="loadSubject()">
-<option value="">اختر المادة</option>
-</select>
-</div>
-<div>
-<label>الدرس</label>
-<select id="lesson"></select>
-</div>
-</div>
+  <label>المادة</label>
+  <select id="subjectSelect" disabled>
+    <option value="">اختر المادة</option>
+  </select>
 
-<div class="grid" style="margin-top:20px">
-<div><label>اختيار من متعدد</label><input type="number" id="mcq" value="5" min="0"></div>
-<div><label>صح وخطأ</label><input type="number" id="tf" value="3" min="0"></div>
-<div><label>مقالي قصير</label><input type="number" id="short" value="2" min="0"></div>
-<div><label>مقالي طويل</label><input type="number" id="long" value="1" min="0"></div>
-</div>
+  <label>الدرس</label>
+  <select id="chapterSelect" disabled>
+    <option value="">اختر الدرس</option>
+  </select>
 
-<div style="text-align:center;margin-top:20px">
-<button onclick="generateExam()">توليد الامتحان</button>
-<button onclick="window.print()">طباعة PDF</button>
-</div>
-</div>
+  <button id="startBtn" disabled>ابدأ الامتحان</button>
 
-<div id="loading" class="loading">جاري تحميل المادة...</div>
-<div id="exam-preview"></div>
+  <div id="quizArea"></div>
 </div>
 
 <script>
-let currentData = {};
-const subjects = {
-"رابعة":["عربي","رياضيات","علوم","دراسات"],
-"خامسة":["عربي","رياضيات","علوم","دراسات"],
-"سادسة":["عربي","رياضيات","علوم","دراسات"]
-};
+const gradeSelect = document.getElementById('gradeSelect');
+const subjectSelect = document.getElementById('subjectSelect');
+const chapterSelect = document.getElementById('chapterSelect');
+const startBtn = document.getElementById('startBtn');
+const quizArea = document.getElementById('quizArea');
 
-function updateSubjects(){
-const grade=document.getElementById('grade').value;
-const subSelect=document.getElementById('subject');
-subSelect.innerHTML='<option value="">اختر المادة</option>';
-if(subjects[grade]){
-subjects[grade].forEach(s=>{
-subSelect.innerHTML+=`<option value="${s}">${s}</option>`;
+let allData = {};
+
+// 1. قائمة الصفوف والمواد اللي الموقع هيبحث عن ملفاتها
+const filesToLoad = [
+  "رابعة-ابتدائي-رياضيات.json",
+  "رابعة-ابتدائي-انجلش.json",
+  "رابعة-ابتدائي-علوم.json",
+  "رابعة-ابتدائي-دراسات.json",
+  "خامسة-ابتدائي-رياضيات.json",
+  "خامسة-ابتدائي-انجلش.json",
+  "خامسة-ابتدائي-علوم.json",
+  "خامسة-ابتدائي-دراسات.json",
+  "سادسة-ابتدائي-رياضيات.json",
+  "سادسة-ابتدائي-انجلش.json",
+  "سادسة-ابتدائي-علوم.json",
+  "سادسة-ابتدائي-دراسات.json",
+  "تالتة-اعدادي-رياضيات.json",
+  "تالتة-اعدادي-انجلش.json",
+  "تالتة-اعدادي-علوم.json",
+  "تالتة-اعدادي-دراسات.json",
+  "اولى-ثانوي-عربي.json",
+  "اولى-ثانوي-رياضيات.json",
+  "اولى-ثانوي-انجلش.json",
+  "اولى-ثانوي-علوم-متكامله.json",
+  "اولى-ثانوي-تاريخ.json",
+  "اولى-ثانوي-فلسفه.json"
+];
+
+// 2. تحميل كل الملفات الموجودة
+async function loadFiles() {
+  for (let file of filesToLoad) {
+    try {
+      let res = await fetch(file);
+      if (res.ok) {
+        let data = await res.json();
+        let [grade, subject] = file.replace('.json', '').split('-').slice(0,2).join('-');
+        subject = file.replace('.json', '').split('-').slice(1).join('-');
+
+        let gradeName = file.split('-').slice(0,2).join(' ');
+        let subjectName = file.replace('.json', '').split('-').slice(2).join(' ');
+
+        if (!allData[gradeName]) allData[gradeName] = {};
+        allData[gradeName][subjectName] = data;
+      }
+    } catch (e) {
+      console.log(file + " مش موجود");
+    }
+  }
+  fillGrades();
+}
+
+// 3. تعبئة قائمة الصفوف
+function fillGrades() {
+  gradeSelect.innerHTML = '<option value="">اختر الصف</option>';
+  Object.keys(allData).forEach(grade => {
+    gradeSelect.innerHTML += `<option value="${grade}">${grade}</option>`;
+  });
+}
+
+// 4. لما يختار صف
+gradeSelect.addEventListener('change', () => {
+  let grade = gradeSelect.value;
+  subjectSelect.innerHTML = '<option value="">اختر المادة</option>';
+  chapterSelect.innerHTML = '<option value="">اختر الدرس</option>';
+  chapterSelect.disabled = true;
+  startBtn.disabled = true;
+
+  if (grade && allData[grade]) {
+    subjectSelect.disabled = false;
+    Object.keys(allData[grade]).forEach(subject => {
+      subjectSelect.innerHTML += `<option value="${subject}">${subject}</option>`;
+    });
+  } else {
+    subjectSelect.disabled = true;
+  }
 });
-}
-}
 
-async function loadSubject(){
-const grade=document.getElementById('grade').value;
-const subject=document.getElementById('subject').value;
-if(!grade||!subject)return;
+// 5. لما يختار مادة
+subjectSelect.addEventListener('change', () => {
+  let grade = gradeSelect.value;
+  let subject = subjectSelect.value;
+  chapterSelect.innerHTML = '<option value="">اختر الدرس</option>';
 
-document.getElementById('loading').style.display='block';
-try{
-const res=await fetch(`${grade}-${subject}.json`);
-currentData=await res.json();
-const lessonSelect=document.getElementById('lesson');
-lessonSelect.innerHTML='<option value="">اختر الدرس</option>';
-Object.keys(currentData).forEach(lesson=>{
-lessonSelect.innerHTML+=`<option>${lesson}</option>`;
+  if (subject && allData[grade][subject]) {
+    chapterSelect.disabled = false;
+    Object.keys(allData[grade][subject]).forEach(chapter => {
+      chapterSelect.innerHTML += `<option value="${chapter}">${chapter}</option>`;
+    });
+    startBtn.disabled = false;
+  } else {
+    chapterSelect.disabled = true;
+    startBtn.disabled = true;
+  }
 });
-}catch(e){
-alert("ملف المادة مش موجود. تأكد إن ${grade}-${subject}.json جنب index.html");
-}
-document.getElementById('loading').style.display='none';
-}
 
-function generateExam(){
-const lesson=document.getElementById('lesson').value;
-if(!lesson){alert("اختار درس");return;}
+// 6. تشغيل الامتحان
+startBtn.addEventListener('click', () => {
+  let grade = gradeSelect.value;
+  let subject = subjectSelect.value;
+  let chapter = chapterSelect.value;
+  let questions = allData[grade][subject][chapter];
 
-const q=currentData[lesson];
-if(!q){alert("الدرس ده فاضي");return;}
+  quizArea.innerHTML = '';
+  let allQ = [];
 
-let html=`<h2>${lesson}</h2>`;
-let n=1;
-['mcq','tf','short','long'].forEach(type=>{
-const count=document.getElementById(type).value;
-const titles={mcq:'اختر الإجابة',tf:'صح أم خطأ',short:'مقالي قصير',long:'مقالي طويل'};
-if(count>0&&q[type]){
-html+=`<h3 style="margin-top:25px;color:#0066cc;">${titles[type]}</h3>`;
-for(let i=0;i<Math.min(count,q[type].length);i++){
-html+=`<div class="q"><strong>س${n++}:</strong> ${q[type][i]}`;
-if(type!=='mcq'&&type!=='tf')html+='<br><br><br>';
-html+='</div>';
-}
+  if (questions.mcq) allQ = allQ.concat(questions.mcq.map(q => ({type: 'mcq', q})));
+  if (questions.tf) allQ = allQ.concat(questions.tf.map(q => ({type: 'tf', q})));
+  if (questions.short) allQ = allQ.concat(questions.short.map(q => ({type: 'short', q})));
+
+  allQ.sort(() => Math.random() - 0.5); // خلط الأسئلة
+
+  allQ.slice(0, 10).forEach((item, i) => {
+    let div = document.createElement('div');
+    div.className = 'question';
+    div.innerHTML = `<p>${i+1}. ${item.q}</p>`;
+
+    if (item.type === 'mcq' || item.type === 'tf') {
+      div.innerHTML += `<div class="options"><button onclick="alert('جرب تاني')">اظهر الإجابة</button></div>`;
+    }
+    quizArea.appendChild(div);
+  });
 });
-document.getElementById('exam-preview').innerHTML=html;
-document.getElementById('exam-preview').style.display='block';
-}
+
+loadFiles();
 </script>
+
 </body>
 </html>
