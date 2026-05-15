@@ -1,0 +1,128 @@
+{
+  "Term 1 - Present Perfect": {
+    "mcq": [
+      "I _____ my homework.<br>a) finish b) finished c) have finished d) finishing",
+      "She _____ to London before.<br>a) go b) goes c) went d) has gone"
+    ],
+    "tf": [
+      "We use present perfect for actions that happened at an unspecified time in the past. [True/False]",
+      "I have seen that movie yesterday. [True/False]"
+    ],
+    "short": [
+      "Write a sentence using 'have never been'",
+      "Change to present perfect: I eat lunch"
+    ],
+    "long": []
+  },
+  "Term 1 - Jobs and Professions": {
+    "mcq": [
+      "A person who flies a plane is a:<br>a) Driver b) Pilot c) Captain d) Sailor",
+      "A person who works in a hospital and helps doctors is a:<br>a) Nurse b) Teacher c) Engineer d) Farmer"
+    ],
+    "tf": [
+      "A vet treats animals. [True/False]",
+      "A chef works in a farm. [True/False]"
+    ],
+    "short": [
+      "Name 4 professions",
+      "What does an engineer do?"
+    ],
+    "long": [
+      "Write about your dream job in 5 sentences"
+    ]
+  },
+  "Term 1 - Comparative and Superlative": {
+    "mcq": [
+      "Mount Everest is the _____ mountain in the world.<br>a) high b) higher c) highest d) most high",
+      "My house is _____ than yours.<br>a) big b) bigger c) biggest d) more big"
+    ],
+    "tf": [
+      "We add -est to short adjectives for superlative. [True/False]",
+      "Good becomes better in comparative. [True/False]"
+    ],
+    "short": [
+      "Write the superlative of 'tall', 'happy', 'beautiful'",
+      "Make a sentence using 'the most interesting'"
+    ],
+    "long": []
+  },
+  "Term 1 - Natural Disasters": {
+    "mcq": [
+      "A sudden shaking of the ground is a:<br>a) Flood b) Earthquake c) Storm d) Volcano",
+      "Heavy rain that covers land with water is a:<br>a) Drought b) Flood c) Fire d) Wind"
+    ],
+    "tf": [
+      "We should prepare for natural disasters. [True/False]",
+      "Earthquakes happen in the sky. [True/False]"
+    ],
+    "short": [
+      "Name 3 natural disasters",
+      "What should you do during an earthquake?"
+    ],
+    "long": []
+  },
+  "Term 2 - Passive Voice": {
+    "mcq": [
+      "The book _____ by Ahmed.<br>a) write b) writes c) was written d) writing",
+      "Rice _____ in Egypt.<br>a) grow b) grows c) is grown d) growing"
+    ],
+    "tf": [
+      "Passive voice focuses on the action, not the doer. [True/False]",
+      "We use 'be' + past participle in passive. [True/False]"
+    ],
+    "short": [
+      "Change to passive: The teacher explains the lesson",
+      "Write a sentence in passive voice"
+    ],
+    "long": []
+  },
+  "Term 2 - Environment and Pollution": {
+    "mcq": [
+      "_____ pollution harms the air we breathe.<br>a) Water b) Air c) Noise d) Soil",
+      "We should _____ plastic to reduce waste.<br>a) burn b) recycle c) throw d) waste"
+    ],
+    "tf": [
+      "Planting trees helps reduce air pollution. [True/False]",
+      "Throwing garbage in the street is good for the environment. [True/False]"
+    ],
+    "short": [
+      "Name 3 ways to protect the environment",
+      "What causes water pollution?"
+    ],
+    "long": [
+      "Write about how to keep your school clean"
+    ]
+  },
+  "Term 2 - Modal Verbs: Can, Should, Must": {
+    "mcq": [
+      "You _____ do your homework.<br>a) can b) should c) may d) might",
+      "I _____ swim when I was 10.<br>a) can b) could c) should d) must"
+    ],
+    "tf": [
+      "'Must' shows obligation. [True/False]",
+      "'Can' is used for advice. [True/False]"
+    ],
+    "short": [
+      "Give advice using 'should' for a sick friend",
+      "Make a sentence using 'must'"
+    ],
+    "long": []
+  },
+  "Term 2 - Technology and Communication": {
+    "mcq": [
+      "We use _____ to send emails.<br>a) Telephone b) Computer c) Radio d) TV",
+      "The internet helps us _____ information.<br>a) lose b) hide c) share d) forget"
+    ],
+    "tf": [
+      "Social media is a way of communication. [True/False]",
+      "Technology has no effect on our life. [True/False]"
+    ],
+    "short": [
+      "Name 3 advantages of the internet",
+      "How do you use technology in studying?"
+    ],
+    "long": [
+      "Write about the importance of technology in modern life"
+    ]
+  }
+}
