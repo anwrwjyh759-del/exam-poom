@@ -1,0 +1,126 @@
+{
+  "Term 1 - Past Perfect and Past Perfect Continuous": {
+    "mcq": [
+      "I had finished my homework before my father _____ home.<br>a) comes b) came c) will come d) come",
+      "She _____ English for 2 hours before the class started.<br>a) studied b) was studying c) had been studying d) has been studying"
+    ],
+    "tf": [
+      "Past perfect is used for an action that happened before another past action. [True/False]",
+      "Past perfect continuous shows duration up to a point in the past. [True/False]"
+    ],
+    "short": [
+      "Write a sentence using 'had left'",
+      "Change to past perfect continuous: She worked here for 5 years before she moved"
+    ],
+    "long": []
+  },
+  "Term 1 - Future Continuous and Future Perfect": {
+    "mcq": [
+      "This time tomorrow, I _____ on the beach.<br>a) sit b) will sit c) will be sitting d) am sitting",
+      "By next year, I _____ my studies.<br>a) finish b) will finish c) will have finished d) finished"
+    ],
+    "tf": [
+      "Future continuous is used for actions in progress at a specific time in the future. [True/False]",
+      "Future perfect is used for actions completed before a point in the future. [True/False]"
+    ],
+    "short": [
+      "Make a sentence about what you will be doing at 8 pm tonight",
+      "Complete: By 2030, scientists _____ a cure for cancer"
+    ],
+    "long": []
+  },
+  "Term 1 - Passive Voice: Advanced Tenses": {
+    "mcq": [
+      "The project _____ by the team next month.<br>a) will do b) will be done c) will have done d) is done",
+      "English _____ all over the world.<br>a) speaks b) is spoken c) was spoken d) has spoken"
+    ],
+    "tf": [
+      "We use 'be + past participle' to form the passive. [True/False]",
+      "The passive of 'She has written a letter' is 'A letter has written by her'. [True/False]"
+    ],
+    "short": [
+      "Change to passive: They will build a new hospital",
+      "Rewrite in active: The cake was made by my mother"
+    ],
+    "long": []
+  },
+  "Term 1 - Health and Medicine": {
+    "mcq": [
+      "A doctor who performs operations is a:<br>a) dentist b) surgeon c) pharmacist d) nurse",
+      "Too much sugar can cause:<br>a) anemia b) diabetes c) flu d) allergy"
+    ],
+    "tf": [
+      "Exercise is important for good health. [True/False]",
+      "You should see a doctor only when you are very sick. [True/False]"
+    ],
+    "short": [
+      "Give 3 tips for a healthy lifestyle",
+      "What should you do if you have a high fever?"
+    ],
+    "long": [
+      "Write about how to prevent common diseases"
+    ]
+  },
+  "Term 2 - Conditionals: Type 3 and Mixed Conditionals": {
+    "mcq": [
+      "If I had studied harder, I _____ the exam.<br>a) would pass b) would have passed c) will pass d) pass",
+      "If I were you, I _____ that job.<br>a) would take b) would have taken c) will take d) take"
+    ],
+    "tf": [
+      "Type 3 conditional refers to unreal past situations. [True/False]",
+      "Mixed conditionals combine past and present. [True/False]"
+    ],
+    "short": [
+      "Write a Type 3 conditional sentence",
+      "Complete: If I had known, I _____"
+    ],
+    "long": []
+  },
+  "Term 2 - Reported Speech: Commands and Requests": {
+    "mcq": [
+      "'Close the door,' he said. → He told me _____ the door.<br>a) close b) to close c) closing d) closed",
+      "'Please help me,' she said. → She asked me _____ her.<br>a) help b) to help c) helping d) helped"
+    ],
+    "tf": [
+      "In reported commands, we use 'tell + object + to + infinitive'. [True/False]",
+      "We use 'that' in reported requests. [True/False]"
+    ],
+    "short": [
+      "Report: 'Don't be late,' the teacher said",
+      "Change to reported speech: 'Can you open the window?' she asked"
+    ],
+    "long": []
+  },
+  "Term 2 - Relative Clauses: Defining and Non-defining": {
+    "mcq": [
+      "My brother, _____ lives in London, is a doctor.<br>a) who b) which c) that d) where",
+      "The book _____ I bought yesterday is interesting.<br>a) who b) which c) where d) when"
+    ],
+    "tf": [
+      "Non-defining relative clauses give extra information and use commas. [True/False]",
+      "We can use 'that' in non-defining relative clauses. [True/False]"
+    ],
+    "short": [
+      "Combine: This is the man. He helped me",
+      "Add commas where needed: My teacher Mr. Ali who is very kind helped me"
+    ],
+    "long": []
+  },
+  "Term 2 - Global Issues and Environment": {
+    "mcq": [
+      "Global warming is caused by an increase in:<br>a) Oxygen b) Carbon dioxide c) Nitrogen d) Hydrogen",
+      "Deforestation leads to:<br>a) More rain b) Soil erosion c) Clean air d) More forests"
+    ],
+    "tf": [
+      "Recycling helps reduce waste and pollution. [True/False]",
+      "Climate change has no effect on agriculture. [True/False]"
+    ],
+    "short": [
+      "Name 3 effects of climate change",
+      "What can individuals do to protect the environment?"
+    ],
+    "long": [
+      "Write an essay about the importance of protecting our planet"
+    ]
+  }
+}
