@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مولد الامتحانات</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Cairo',sans-serif}
+body{background:#0a0a0a;color:#00f7ff;padding:20px}
+.container{max-width:1000px;margin:auto}
+h1{text-align:center;font-size:32px;text-shadow:0 0 20px #00f7ff;margin-bottom:25px}
+.box{background:rgba(0,0,0,0.8);border:2px solid #00f7ff;border-radius:10px;padding:25px}
+label{display:block;margin:10px 0 5px;font-weight:700}
+select,input{width:100%;padding:12px;background:#111;border:2px solid #00f7ff;color:#00f7ff;border-radius:6px;font-size:16px;margin-bottom:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px}
+button{background:transparent;color:#00f7ff;border:2px solid #00f7ff;padding:15px 40px;font-size:18px;font-weight:700;border-radius:6px;cursor:pointer;margin:10px 5px}
+button:hover{background:#00f7ff;color:#0a0a0a;box-shadow:0 0 25px #00f7ff}
+#exam-preview{background:white;color:black;padding:40px;margin-top:30px;border-radius:10px;display:none}
+.q{margin:20px 0;padding-bottom:15px;border-bottom:1px dashed #ccc}
+.loading{text-align:center;padding:20px;color:#00ff88;display:none}
+@media print{body{background:white;padding:0}.box,button{display:none}#exam-preview{display:block!important}}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>مولد الامتحانات</h1>
+
+<div class="box">
+<div class="grid">
+<div>
+<label>الصف</label>
+<select id="grade" onchange="updateSubjects()">
+<option value="">اختر الصف</option>
+<option value="رابعة">رابعة ابتدائي</option>
+<option value="خامسة">خامسة ابتدائي</option>
+<option value="سادسة">سادسة ابتدائي</option>
+</select>
+</div>
+<div>
+<label>المادة</label>
+<select id="subject" onchange="loadSubject()">
+<option value="">اختر المادة</option>
+</select>
+</div>
+<div>
+<label>الدرس</label>
+<select id="lesson"></select>
+</div>
+</div>
+
+<div class="grid" style="margin-top:20px">
+<div><label>اختيار من متعدد</label><input type="number" id="mcq" value="5" min="0"></div>
+<div><label>صح وخطأ</label><input type="number" id="tf" value="3" min="0"></div>
+<div><label>مقالي قصير</label><input type="number" id="short" value="2" min="0"></div>
+<div><label>مقالي طويل</label><input type="number" id="long" value="1" min="0"></div>
+</div>
+
+<div style="text-align:center;margin-top:20px">
+<button onclick="generateExam()">توليد الامتحان</button>
+<button onclick="window.print()">طباعة PDF</button>
+</div>
+</div>
+
+<div id="loading" class="loading">جاري تحميل المادة...</div>
+<div id="exam-preview"></div>
+</div>
+
+<script>
+let currentData = {};
+const subjects = {
+"رابعة":["عربي","رياضيات","علوم","دراسات"],
+"خامسة":["عربي","رياضيات","علوم","دراسات"],
+"سادسة":["عربي","رياضيات","علوم","دراسات"]
+};
+
+function updateSubjects(){
+const grade=document.getElementById('grade').value;
+const subSelect=document.getElementById('subject');
+subSelect.innerHTML='<option value="">اختر المادة</option>';
+if(subjects[grade]){
+subjects[grade].forEach(s=>{
+subSelect.innerHTML+=`<option value="${s}">${s}</option>`;
+});
+}
+}
+
+async function loadSubject(){
+const grade=document.getElementById('grade').value;
+const subject=document.getElementById('subject').value;
+if(!grade||!subject)return;
+
+document.getElementById('loading').style.display='block';
+try{
+const res=await fetch(`${grade}-${subject}.json`);
+currentData=await res.json();
+const lessonSelect=document.getElementById('lesson');
+lessonSelect.innerHTML='<option value="">اختر الدرس</option>';
+Object.keys(currentData).forEach(lesson=>{
+lessonSelect.innerHTML+=`<option>${lesson}</option>`;
+});
+}catch(e){
+alert("ملف المادة مش موجود. تأكد إن ${grade}-${subject}.json جنب index.html");
+}
+document.getElementById('loading').style.display='none';
+}
+
+function generateExam(){
+const lesson=document.getElementById('lesson').value;
+if(!lesson){alert("اختار درس");return;}
+
+const q=currentData[lesson];
+if(!q){alert("الدرس ده فاضي");return;}
+
+let html=`<h2>${lesson}</h2>`;
+let n=1;
+['mcq','tf','short','long'].forEach(type=>{
+const count=document.getElementById(type).value;
+const titles={mcq:'اختر الإجابة',tf:'صح أم خطأ',short:'مقالي قصير',long:'مقالي طويل'};
+if(count>0&&q[type]){
+html+=`<h3 style="margin-top:25px;color:#0066cc;">${titles[type]}</h3>`;
+for(let i=0;i<Math.min(count,q[type].length);i++){
+html+=`<div class="q"><strong>س${n++}:</strong> ${q[type][i]}`;
+if(type!=='mcq'&&type!=='tf')html+='<br><br><br>';
+html+='</div>';
+}
+});
+document.getElementById('exam-preview').innerHTML=html;
+document.getElementById('exam-preview').style.display='block';
+}
+</script>
+</body>
+</html>
