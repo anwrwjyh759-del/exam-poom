@@ -1,0 +1,122 @@
+{
+  "Term 1 - Letters A to E": {
+    "mcq": [
+      "What is the first letter of the alphabet?<br>a) B b) A c) C d) D",
+      "Which letter comes after B?<br>a) A b) C c) D d) E"
+    ],
+    "tf": [
+      "A is a vowel letter. [True/False]",
+      "C comes before B. [True/False]"
+    ],
+    "short": [
+      "Write the letters: A, B, C",
+      "What is the capital letter of 'a'?"
+    ],
+    "long": []
+  },
+  "Term 1 - Colors": {
+    "mcq": [
+      "What color is the sky?<br>a) Red b) Blue c) Green d) Yellow",
+      "What color is an apple?<br>a) Red b) Blue c) Black d) White"
+    ],
+    "tf": [
+      "Grass is green. [True/False]",
+      "The sun is black. [True/False]"
+    ],
+    "short": [
+      "Name 3 colors",
+      "What color is a banana?"
+    ],
+    "long": []
+  },
+  "Term 1 - Numbers 1 to 10": {
+    "mcq": [
+      "How many fingers on one hand?<br>a) 4 b) 5 c) 6 d) 10",
+      "What comes after 3?<br>a) 2 b) 4 c) 5 d) 6"
+    ],
+    "tf": [
+      "5 is bigger than 3. [True/False]",
+      "0 is bigger than 1. [True/False]"
+    ],
+    "short": [
+      "Count and write: 1, 2, 3, 4, 5",
+      "How many apples do you see?"
+    ],
+    "long": []
+  },
+  "Term 1 - My Family": {
+    "mcq": [
+      "Who is your father?<br>a) My sister b) My dad c) My friend d) My teacher",
+      "I have a _____.<br>a) Mother b) Brother c) Sister d) All of the above"
+    ],
+    "tf": [
+      "My mother is a family member. [True/False]",
+      "My teacher is my family. [True/False]"
+    ],
+    "short": [
+      "Write the names of your family members",
+      "Who helps you at home?"
+    ],
+    "long": []
+  },
+  "Term 2 - Animals": {
+    "mcq": [
+      "Which animal can fly?<br>a) Dog b) Bird c) Cat d) Cow",
+      "Which animal says 'meow'?<br>a) Dog b) Cat c) Cow d) Sheep"
+    ],
+    "tf": [
+      "A lion is a wild animal. [True/False]",
+      "A fish lives on land. [True/False]"
+    ],
+    "short": [
+      "Name 3 animals",
+      "What sound does a dog make?"
+    ],
+    "long": []
+  },
+  "Term 2 - Fruits": {
+    "mcq": [
+      "Which one is a fruit?<br>a) Carrot b) Apple c) Potato d) Onion",
+      "What color is a banana?<br>a) Red b) Yellow c) Green d) Blue"
+    ],
+    "tf": [
+      "Fruits are good for health. [True/False]",
+      "We should not wash fruits before eating. [True/False]"
+    ],
+    "short": [
+      "Name 3 fruits you like",
+      "What is your favorite fruit?"
+    ],
+    "long": []
+  },
+  "Term 2 - Body Parts": {
+    "mcq": [
+      "We see with our:<br>a) Nose b) Eyes c) Ears d) Mouth",
+      "We eat with our:<br>a) Eyes b) Ears c) Mouth d) Hands"
+    ],
+    "tf": [
+      "We have two eyes. [True/False]",
+      "We walk with our hands. [True/False]"
+    ],
+    "short": [
+      "Name 3 parts of your body",
+      "What do you use to hear?"
+    ],
+    "long": []
+  },
+  "Term 2 - Greetings": {
+    "mcq": [
+      "We say _____ in the morning.<br>a) Good night b) Good morning c) Good evening d) Goodbye",
+      "What do you say when you leave?<br>a) Hello b) Goodbye c) Thank you d) Sorry"
+    ],
+    "tf": [
+      "We say 'Hello' when we meet someone. [True/False]",
+      "We say 'Thank you' when someone helps us. [True/False]"
+    ],
+    "short": [
+      "Write 3 greetings",
+      "What do you say to your teacher?"
+    ],
+    "long": []
+  }
+}
