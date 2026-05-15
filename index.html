@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>مولد الامتحانات</title>
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+    * { box-sizing: border-box; }
   body {
     background: #000;
     color: #fff;
@@ -16,27 +18,37 @@
   h1 {
     color: #00ffff;
     text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+    margin-bottom: 20px;
   }
  .container {
-    max-width: 600px;
+    max-width: 650px;
     margin: auto;
     border: 2px solid #00ffff;
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0 0 20px #00ffff;
+    background: #0a0a0a;
+  }
+  label {
+    display: block;
+    text-align: right;
+    margin: 15px 0 5px;
+    color: #00ffff;
+    font-weight: bold;
   }
   select, button {
     width: 100%;
     padding: 12px;
-    margin: 10px 0;
+    margin: 5px 0;
     border-radius: 10px;
     border: 1px solid #00ffff;
     background: #111;
     color: #00ffff;
     font-size: 16px;
     outline: none;
+    font-family: 'Tajawal', Arial, sans-serif;
   }
-  select:focus, button:hover {
+  select:focus {
     box-shadow: 0 0 10px #00ffff;
   }
   button {
@@ -44,6 +56,18 @@
     color: #000;
     font-weight: bold;
     cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+  }
+  button:hover:not(:disabled) {
+    box-shadow: 0 0 15px #00ffff;
+    transform: scale(1.02);
+  }
+  button:disabled {
+    background: #333;
+    color: #666;
+    cursor: not-allowed;
+    border-color: #333;
   }
  .question {
     background: #111;
@@ -69,11 +93,9 @@
     background: #ff4444;
     color: #fff;
   }
-  label {
-    display: block;
-    text-align: right;
-    margin-top: 10px;
-    color: #00ffff;
+ .error {
+    color: #ff4444;
+    margin-top: 20px;
   }
 </style>
 </head>
@@ -81,17 +103,17 @@
 
 <h1>مولد الامتحانات</h1>
 <div class="container">
-  <label>الصف</label>
+  <label>اختر الصف</label>
   <select id="gradeSelect">
     <option value="">اختر الصف</option>
   </select>
 
-  <label>المادة</label>
+  <label>اختر المادة</label>
   <select id="subjectSelect" disabled>
     <option value="">اختر المادة</option>
   </select>
 
-  <label>الدرس</label>
+  <label>اختر الدرس</label>
   <select id="chapterSelect" disabled>
     <option value="">اختر الدرس</option>
   </select>
@@ -110,56 +132,79 @@ const quizArea = document.getElementById('quizArea');
 
 let allData = {};
 
-// 1. قائمة الصفوف والمواد اللي الموقع هيبحث عن ملفاتها
+// قائمة الملفات - مظبوطة على الأسماء اللي رفعتها
 const filesToLoad = [
-  "رابعة-ابتدائي-رياضيات.json",
-  "رابعة-ابتدائي-انجلش.json",
-  "رابعة-ابتدائي-علوم.json",
-  "رابعة-ابتدائي-دراسات.json",
-  "خامسة-ابتدائي-رياضيات.json",
-  "خامسة-ابتدائي-انجلش.json",
-  "خامسة-ابتدائي-علوم.json",
-  "خامسة-ابتدائي-دراسات.json",
-  "سادسة-ابتدائي-رياضيات.json",
-  "سادسة-ابتدائي-انجلش.json",
-  "سادسة-ابتدائي-علوم.json",
-  "سادسة-ابتدائي-دراسات.json",
-  "تالتة-اعدادي-رياضيات.json",
-  "تالتة-اعدادي-انجلش.json",
-  "تالتة-اعدادي-علوم.json",
-  "تالتة-اعدادي-دراسات.json",
-  "اولى-ثانوي-عربي.json",
-  "اولى-ثانوي-رياضيات.json",
-  "اولى-ثانوي-انجلش.json",
-  "اولى-ثانوي-علوم-متكامله.json",
-  "اولى-ثانوي-تاريخ.json",
-  "اولى-ثانوي-فلسفه.json"
+  "اولى ثانوي-انجلش.json",
+  "اولى ثانوي-تاريخ.json",
+  "اولى ثانوي-رياضيات.json",
+  "اولى ثانوي-عربي.json",
+  "اولى ثانوي-علوم متكامله.json",
+  "اولى ثانوي-فلسفه.json",
+  "اولى اعدادي-انجلش.json",
+  "اولى اعدادي-دراسات.json",
+  "اولى اعدادي-رياضيات.json",
+  "اولى اعدادي-عربي.json",
+  "اولى اعدادي-علوم.json",
+  "تانيه اعدادي-رياضيات.json",
+  "تانيه اعدادي-عربي.json",
+  "تانيه الاعدادي-دراسات.json",
+  "تانيه إعدادي-علوم.json",
+  "تانيه اعدادي-انجلش.json",
+  "تالته اعدادي-انجلش.json",
+  "تالته اعدادي-دراسات.json",
+  "تالته اعدادي-رياضيات.json",
+  "تالته اعدادي-عربي.json",
+  "تالته اعدادي-علوم.json",
+  "رابعه ابتدائي-انجلش.json",
+  "رابعه ابتدائي-دراسات.json",
+  "رابعه ابتدائي-رياضيات.json",
+  "رابعه ابتدائي-عربي.json",
+  "رابعه ابتدائي-علوم.json",
+  "خامسه ابتدائي-انجلش.json",
+  "خامسه ابتدائي-دراسات.json",
+  "خامسه ابتدائي-رياضيات.json",
+  "خامسه ابتدائي-عربي.json",
+  "خامسه ابتدائي-علوم.json",
+  "سادسه ابتدائي-انجلش.json",
+  "سادسه ابتدائي-دراسات.json",
+  "سادسه ابتدائي-رياضيات.json",
+  "سادسه ابتدائي-عربي.json",
+  "سادسه ابتدائي-علوم.json",
+  "تالته ابتدائي-انجلش.json",
+  "تالته ابتدائي-رياضيات.json",
+  "تالته ابتدائي-عربي.json",
+  "تانيه ابتدائي-انجلش.json",
+  "تانيه ابتدائي-رياضيات.json",
+  "تانيه ابتدائي-عربي.json"
 ];
 
-// 2. تحميل كل الملفات الموجودة
+// تحميل الملفات
 async function loadFiles() {
+  let loadedCount = 0;
   for (let file of filesToLoad) {
     try {
       let res = await fetch(file);
       if (res.ok) {
         let data = await res.json();
-        let [grade, subject] = file.replace('.json', '').split('-').slice(0,2).join('-');
-        subject = file.replace('.json', '').split('-').slice(1).join('-');
 
-        let gradeName = file.split('-').slice(0,2).join(' ');
-        let subjectName = file.replace('.json', '').split('-').slice(2).join(' ');
+        // استخراج اسم الصف والمادة من اسم الملف
+        let parts = file.replace('.json', '').split('-');
+        let grade = parts[0] + ' ' + parts[1];
+        let subject = parts.slice(2).join(' ');
 
-        if (!allData[gradeName]) allData[gradeName] = {};
-        allData[gradeName][subjectName] = data;
+        if (!allData[grade]) allData[grade] = {};
+        allData[grade][subject] = data;
+        loadedCount++;
       }
     } catch (e) {
-      console.log(file + " مش موجود");
+      console.log('لم يتم تحميل: ' + file);
     }
   }
+  console.log('تم تحميل ' + loadedCount + ' ملف');
   fillGrades();
 }
 
-// 3. تعبئة قائمة الصفوف
+// تعبئة الصفوف
 function fillGrades() {
   gradeSelect.innerHTML = '<option value="">اختر الصف</option>';
   Object.keys(allData).forEach(grade => {
@@ -167,13 +212,14 @@ function fillGrades() {
   });
 }
 
-// 4. لما يختار صف
+// اختيار الصف
 gradeSelect.addEventListener('change', () => {
   let grade = gradeSelect.value;
   subjectSelect.innerHTML = '<option value="">اختر المادة</option>';
   chapterSelect.innerHTML = '<option value="">اختر الدرس</option>';
   chapterSelect.disabled = true;
   startBtn.disabled = true;
+  quizArea.innerHTML = '';
 
   if (grade && allData[grade]) {
     subjectSelect.disabled = false;
@@ -185,7 +231,7 @@ gradeSelect.addEventListener('change', () => {
   }
 });
 
-// 5. لما يختار مادة
+// اختيار المادة
 subjectSelect.addEventListener('change', () => {
   let grade = gradeSelect.value;
   let subject = subjectSelect.value;
@@ -203,34 +249,42 @@ subjectSelect.addEventListener('change', () => {
   }
 });
 
-// 6. تشغيل الامتحان
+// بدء الامتحان
 startBtn.addEventListener('click', () => {
   let grade = gradeSelect.value;
   let subject = subjectSelect.value;
   let chapter = chapterSelect.value;
-  let questions = allData[grade][subject][chapter];
 
+  if (!allData[grade] ||!allData[grade][subject] ||!allData[grade][subject][chapter]) {
+    quizArea.innerHTML = '<p class="error">لا يوجد أسئلة في هذا الدرس</p>';
+    return;
+  }
+
+  let questions = allData[grade][subject][chapter];
   quizArea.innerHTML = '';
   let allQ = [];
 
   if (questions.mcq) allQ = allQ.concat(questions.mcq.map(q => ({type: 'mcq', q})));
   if (questions.tf) allQ = allQ.concat(questions.tf.map(q => ({type: 'tf', q})));
   if (questions.short) allQ = allQ.concat(questions.short.map(q => ({type: 'short', q})));
+  if (questions.long) allQ = allQ.concat(questions.long.map(q => ({type: 'long', q})));
 
-  allQ.sort(() => Math.random() - 0.5); // خلط الأسئلة
+  if (allQ.length === 0) {
+    quizArea.innerHTML = '<p class="error">لا يوجد أسئلة في هذا الدرس</p>';
+    return;
+  }
 
-  allQ.slice(0, 10).forEach((item, i) => {
+  allQ.sort(() => Math.random() - 0.5);
+
+  allQ.slice(0, 15).forEach((item, i) => {
     let div = document.createElement('div');
     div.className = 'question';
-    div.innerHTML = `<p>${i+1}. ${item.q}</p>`;
-
-    if (item.type === 'mcq' || item.type === 'tf') {
-      div.innerHTML += `<div class="options"><button onclick="alert('جرب تاني')">اظهر الإجابة</button></div>`;
-    }
+    div.innerHTML = `<p><strong>${i+1}.</strong> ${item.q}</p>`;
     quizArea.appendChild(div);
   });
 });
 
+// ابدأ التحميل
 loadFiles();
 </script>
 
