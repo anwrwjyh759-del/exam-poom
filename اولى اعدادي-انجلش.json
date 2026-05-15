@@ -1,0 +1,128 @@
+{
+  "Term 1 - Past Simple vs Past Continuous": {
+    "mcq": [
+      "I _____ TV when the phone rang.<br>a) watch b) was watching c) watched d) am watching",
+      "She _____ to school yesterday.<br>a) goes b) went c) was going d) is going"
+    ],
+    "tf": [
+      "We use past continuous for actions interrupted by another action in the past. [True/False]",
+      "I was go to the market yesterday. [True/False]"
+    ],
+    "short": [
+      "Write a sentence using 'while I was studying'",
+      "Change to past continuous: She cooks dinner"
+    ],
+    "long": []
+  },
+  "Term 1 - Comparative and Superlative Adjectives": {
+    "mcq": [
+      "Mount Everest is _____ than Kilimanjaro.<br>a) high b) higher c) highest d) more high",
+      "This is the _____ book I have ever read.<br>a) good b) better c) best d) most good"
+    ],
+    "tf": [
+      "We add 'more' before long adjectives in comparative. [True/False]",
+      "Good becomes 'more good' in superlative. [True/False]"
+    ],
+    "short": [
+      "Write the comparative and superlative of 'beautiful', 'big', 'bad'",
+      "Make a sentence using 'the most interesting'"
+    ],
+    "long": [
+      "Compare two cities using comparatives and superlatives"
+    ]
+  },
+  "Term 1 - Present Perfect vs Past Simple": {
+    "mcq": [
+      "I _____ to Paris three times.<br>a) go b) went c) have gone d) was going",
+      "She _____ her homework yesterday.<br>a) has done b) did c) does d) is doing"
+    ],
+    "tf": [
+      "We use present perfect for actions at an unspecified time in the past. [True/False]",
+      "I have seen that movie yesterday. [True/False]"
+    ],
+    "short": [
+      "Write a sentence using 'never been'",
+      "Change to present perfect: I eat lunch"
+    ],
+    "long": []
+  },
+  "Term 1 - Health and Lifestyle": {
+    "mcq": [
+      "Eating too much sugar can cause:<br>a) Strong bones b) Obesity c) Good eyesight d) Energy",
+      "We should exercise to keep our body:<br>a) Weak b) Fit c) Sick d) Tired"
+    ],
+    "tf": [
+      "Drinking water is important for health. [True/False]",
+      "Staying up late every night is healthy. [True/False]"
+    ],
+    "short": [
+      "Give 3 tips for a healthy lifestyle",
+      "What do you usually eat for breakfast?"
+    ],
+    "long": [
+      "Write about how to stay healthy"
+    ]
+  },
+  "Term 2 - Future Forms: Will, Going to, Present Continuous": {
+    "mcq": [
+      "I think it _____ tomorrow.<br>a) rains b) is raining c) will rain d) rained",
+      "We _____ a party next week. We have already planned it.<br>a) will have b) are having c) have d) had"
+    ],
+    "tf": [
+      "We use 'going to' for plans and intentions. [True/False]",
+      "'Will' is used for predictions based on evidence. [True/False]"
+    ],
+    "short": [
+      "Make a prediction about the weather tomorrow",
+      "Write a sentence about your plan for next summer"
+    ],
+    "long": []
+  },
+  "Term 2 - Passive Voice: All Tenses": {
+    "mcq": [
+      "The car _____ in Japan.<br>a) make b) makes c) is made d) was made",
+      "The homework _____ by the students now.<br>a) do b) does c) is being done d) was done"
+    ],
+    "tf": [
+      "In passive voice, the object becomes the subject. [True/False]",
+      "We use 'be' + past participle to form the passive. [True/False]"
+    ],
+    "short": [
+      "Change to passive: They build houses quickly",
+      "Write a sentence in passive present perfect"
+    ],
+    "long": []
+  },
+  "Term 2 - Reported Speech and Questions": {
+    "mcq": [
+      "He said, 'I am busy'. → He said that he _____ busy.<br>a) am b) was c) is d) were",
+      "'Where do you live?' → She asked me where I _____ .<br>a) live b) lived c) am living d) was living"
+    ],
+    "tf": [
+      "In reported speech, we move the tense one step back. [True/False]",
+      "We use 'that' in reported questions. [True/False]"
+    ],
+    "short": [
+      "Report: 'I can swim', she said",
+      "Change to reported question: 'Do you like coffee?'"
+    ],
+    "long": []
+  },
+  "Term 2 - Technology and Communication": {
+    "mcq": [
+      "The internet helps us _____ information quickly.<br>a) lose b) hide c) share d) forget",
+      "Social media can be _____ if not used carefully.<br>a) useful b) dangerous c) easy d) cheap"
+    ],
+    "tf": [
+      "Technology has no effect on education. [True/False]",
+      "We should use technology responsibly. [True/False]"
+    ],
+    "short": [
+      "Name 3 advantages and 2 disadvantages of the internet",
+      "How do you use technology in your daily life?"
+    ],
+    "long": [
+      "Write an essay about the role of technology in modern life"
+    ]
+  }
+}
