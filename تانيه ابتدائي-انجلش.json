@@ -1,0 +1,122 @@
+{
+  "Term 1 - Letters F to J": {
+    "mcq": [
+      "What letter comes after F?<br>a) E b) G c) H d) I",
+      "Which letter is a vowel?<br>a) B b) C c) I d) D"
+    ],
+    "tf": [
+      "G is a consonant letter. [True/False]",
+      "J comes before I. [True/False]"
+    ],
+    "short": [
+      "Write the letters: F, G, H, I, J",
+      "What is the small letter of 'F'?"
+    ],
+    "long": []
+  },
+  "Term 1 - School Objects": {
+    "mcq": [
+      "We write with a:<br>a) Book b) Pen c) Bag d) Desk",
+      "We sit on a:<br>a) Chair b) Table c) Board d) Pen"
+    ],
+    "tf": [
+      "We read books at school. [True/False]",
+      "We sleep on the desk. [True/False]"
+    ],
+    "short": [
+      "Name 3 things in your classroom",
+      "What do you use to erase?"
+    ],
+    "long": []
+  },
+  "Term 1 - Numbers 11 to 20": {
+    "mcq": [
+      "What comes after 15?<br>a) 14 b) 16 c) 17 d) 18",
+      "How do you write 18?<br>a) eighteen b) nineteen c) seventeen d) sixteen"
+    ],
+    "tf": [
+      "20 is bigger than 18. [True/False]",
+      "12 is smaller than 10. [True/False]"
+    ],
+    "short": [
+      "Write numbers from 11 to 15",
+      "Count from 16 to 20"
+    ],
+    "long": []
+  },
+  "Term 1 - Actions": {
+    "mcq": [
+      "We _____ with our legs.<br>a) eat b) run c) see d) hear",
+      "We _____ with our hands.<br>a) walk b) write c) sleep d) read"
+    ],
+    "tf": [
+      "We can jump and run. [True/False]",
+      "We sleep with our eyes open. [True/False]"
+    ],
+    "short": [
+      "Write 3 actions you can do",
+      "What do you do in the morning?"
+    ],
+    "long": []
+  },
+  "Term 2 - Animals and Sounds": {
+    "mcq": [
+      "A dog says:<br>a) Meow b) Woof c) Moo d) Quack",
+      "A cat says:<br>a) Woof b) Meow c) Moo d) Roar"
+    ],
+    "tf": [
+      "A lion is a wild animal. [True/False]",
+      "A fish can fly. [True/False]"
+    ],
+    "short": [
+      "Name 3 wild animals",
+      "What sound does a cow make?"
+    ],
+    "long": []
+  },
+  "Term 2 - Food": {
+    "mcq": [
+      "Bread is made from:<br>a) Milk b) Wheat c) Meat d) Eggs",
+      "We drink:<br>a) Rice b) Milk c) Bread d) Meat"
+    ],
+    "tf": [
+      "Vegetables are healthy. [True/False]",
+      "We should eat only sweets. [True/False]"
+    ],
+    "short": [
+      "Name 3 healthy foods",
+      "What do you eat for breakfast?"
+    ],
+    "long": []
+  },
+  "Term 2 - Weather": {
+    "mcq": [
+      "It is hot in:<br>a) Winter b) Summer c) Spring d) Autumn",
+      "It rains in:<br>a) Summer b) Winter c) Spring d) Both B and C"
+    ],
+    "tf": [
+      "The sun shines in summer. [True/False]",
+      "It snows in summer. [True/False]"
+    ],
+    "short": [
+      "Name the four seasons",
+      "What is the weather like today?"
+    ],
+    "long": []
+  },
+  "Term 2 - Feelings": {
+    "mcq": [
+      "I feel _____ when I get a gift.<br>a) Sad b) Happy c) Angry d) Tired",
+      "I feel _____ when I am sick.<br>a) Happy b) Sick c) Hungry d) Sleepy"
+    ],
+    "tf": [
+      "We should help sad people. [True/False]",
+      "Angry people smile a lot. [True/False]"
+    ],
+    "short": [
+      "Write 3 feelings you know",
+      "What makes you happy?"
+    ],
+    "long": []
+  }
+}
